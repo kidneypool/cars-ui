@@ -1,91 +1,63 @@
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
+
+.main-container{
+    display: flex;
+    background-color: powderblue;
+    height: 100vh;
+    
 }
-body{
-    background-color: pink;
+.header{
+    display: flex;
+    background-color: royalblue;
+    justify-content: space-evenly;
+}
+.body{
+    display: flex;
+    background-color: white;
+    flex-grow: 1;
+    flex-direction: column;
+}
+.footer{
+    display: flex;
+    background-color: cornflowerblue;
+}
+.page{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    background-color: white;
+}
+.car-list{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+.car-property{
+    display: flex;
+}
+.car-property > div{
+    padding-left: 0.5em;
+}
+.car-name{
+    display: flex;
+    flex: 2 0 5em;
+    min-width: 5em;
+}
+.car-year{
+    display: flex;
+    flex: 1 0 5em;
+    min-width: 5em;
+}
+.car-make{
+    display: flex;
+    flex: 2 0 5em;
+    min-width: 5em;
+    word-break: break-all;
+}
+.car-reg{
+    display: flex;
+    flex: 2 0 5em;
+    min-width: 5em;
+}
+.header > div{
+    padding-left: 0.5em;
 }
